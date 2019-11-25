@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MyWeather</string>
+    <string name="head">Weather</string>
+    <string name="helloer">Yura</string>
+    <string name="morning">Good morning</string>
+    <string name="afternoon">Good afternoon</string>
+    <string name="evening">Good evening</string>
+    <string name="goodnight">Good night</string>
+
+    <string name="city_name">Enter the city name and press "ОК"</string>
+    <string name="Change">Change city</string>
+    <string name="back">Back</string>
+    <string name="day">Day</string>
+    <string name="night">Night</string>
+    <string name="date">Date</string>
+    <string name="temperature">Temperature</string>
+
+    <string name="yesterday">18.11.2019</string>
+    <string name="today">19.11.2019</string>
+    <string name="tomorrow">20.11.2019</string>
+    <string name="temp_today_day">+5</string>
+    <string name="temp_tomorrow_day">-18</string>
+    <string name="temp_yesterday_day">+43</string>
+    <string name="temp_today_night">0</string>
+    <string name="temp_tomorrow_night">-56</string>
+    <string name="temp_yesterday_night">+29</string>
+</resources>

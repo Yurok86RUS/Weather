@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/layout_list_cities"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_change_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Change"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_below="@id/layout_list_cities"/>
+
+    <TextView
+        android:id="@+id/now_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_below="@id/city_name"
+        android:layout_marginTop="20dp"/>
+
+    <TableLayout
+        android:id="@+id/table_layout_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/now_temperature"
+        android:layout_marginTop="150dp">
+
+        <TableRow
+            android:id="@+id/table_row_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/description"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/date_yesterday"
+                android:gravity="center"
+                android:text="@string/yesterday"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/date_today"
+                android:gravity="center"
+                android:text="@string/today"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/date_tomorrow"
+                android:gravity="center"
+                android:text="@string/tomorrow"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_weight="1"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/table_row_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/image_rain"
+                android:src="@drawable/rain"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/image_snow"
+                android:src="@drawable/snow"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/image_sun"
+                android:src="@drawable/sun"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/temperature"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_temp_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/temp_day_description"
+                android:gravity="center"
+                android:text="@string/day"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/temp_day_yesterday"
+                android:gravity="center"
+                android:text="@string/temp_yesterday_day"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/temp_day_today"
+                android:gravity="center"
+                android:text="@string/temp_today_day"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/temp_day_tomorrow"
+                android:gravity="center"
+                android:text="@string/temp_tomorrow_day"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_temp_night"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/temp_night_description"
+                android:gravity="center"
+                android:text="@string/night"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/temp_night_yesterday"
+                android:gravity="center"
+                android:text="@string/temp_yesterday_night"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/temp_night_today"
+                android:gravity="center"
+                android:text="@string/temp_today_night"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/temp_night_tomorrow"
+                android:gravity="center"
+                android:text="@string/temp_tomorrow_night"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
