@@ -13,9 +13,6 @@ public class CityPreference {
         userPreference = activity.getPreferences(Activity.MODE_PRIVATE);
     }
 
-    public CityPreference() {
-
-    }
 
     String getCity() {
         return userPreference.getString(KEY, KHANTY);
